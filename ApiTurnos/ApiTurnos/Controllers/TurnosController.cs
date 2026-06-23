@@ -37,7 +37,7 @@ public class TurnosController(TurnoService turnoService) : ControllerBase
         }
     }
 
-    [HttpPut("{id:int}")]
+    [HttpPut("{id}")]
     public ActionResult<Turno> Modificar(int id, Turno turno)
     {
         try
@@ -51,7 +51,7 @@ public class TurnosController(TurnoService turnoService) : ControllerBase
         }
     }
 
-    [HttpDelete("{id:int}")]
+    [HttpDelete("{id}")]
     public IActionResult Eliminar(int id)
     {
         return _turnoService.Eliminar(id) ? NoContent() : NotFound();
