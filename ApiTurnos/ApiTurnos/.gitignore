@@ -1,0 +1,15 @@
+﻿# Visual Studio
+.vs/
+**/.vs/
+*.suo
+*.user
+*.vsidx
+
+# Compilación
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Caché
+*.cache
