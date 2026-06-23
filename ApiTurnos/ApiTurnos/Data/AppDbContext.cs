@@ -5,5 +5,5 @@ namespace ApiTurnos.Data;
 
 public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
 {
-    public DbSet<Turno> Turnos => Set<Turno>();
+    public DbSet<Turno> Turnos { get; set; }
 }
